@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mathe Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="nameModal" class="modal">
+    <div class="modal-content">
+        <h2>Bitte Namen eingeben</h2>
+        <input type="text" id="playerNameInput" placeholder="Dein Name">
+        <button id="startBtn">Start</button>
+    </div>
+    </div>
+    
+            <header>
+                <div class="logo">
+                    <img src="fotos/2025_02_ReAL_Logo_CMYK-removebg-preview.png" alt="logo">
+                </div>
+            </header>
+
+            <main>
+
+                <section class="intro">
+
+                <div class="questions-lead">
+
+                <div class="text-head">
+                    <h1>Mathe Quiz</h1>
+                </div>
+
+                    <div class="lead-text">
+                        <p>
+                        Auf dieser Website finden Sie grundlegende Mathematikaufgaben.<br> Bitte beantworten Sie alle Fragen und viel Erfolg!
+                    </p>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section class="exercise">
+                <div class="choose">
+                    <p>
+                        Bitte wählen Sie unten die Übung aus, mit der Sie beginnen möchten.
+                    </p>
+                </div>
+
+                <div id="app">
+                <div style="text-align:center; margin-bottom:20px;">
+                    <button class="section-btn" onclick="startSection('dreisatz')">Dreisatz</button>
+                    <button class="section-btn" onclick="startSection('Fragen1')">Grundrechnenarten-Teil 1.1</button>
+                    <button class="section-btn" onclick="startSection('Fragen2')">Grundrechnenarten-Teil 1.2</button>
+                    <button class="section-btn" onclick="startSection('Fragen3')">Grundrechnenarten-Teil 2.1</button>
+                    <button class="section-btn" onclick="startSection('Fragen4')">Grundrechnenarten-Teil 2.2</button>
+                    <button class="section-btn" onclick="startSection('Fragen5')">Grundrechnenarten-Teil 3.1</button>
+                    <button class="section-btn" onclick="startSection('Fragen6')">Grundrechnenarten-Teil 3.2</button>
+                </div>
+
+            <h2 id="section-title"></h2>
+                <div id="question-container" class="question-box" style="display:none;">
+            <p id="question"></p>
+            </div>
+
+        <button id="restartBtn" onclick="restartTest()" style="display:none;">Neu starten</button>
+
+        <div class="options" id="options"></div>
+        <div id="progress"></div>
+        <div id="score-box"></div>
+
+
+            </section>
+
+            </main>
+
+            <footer>
+                <p>&copy;ReAL2026</p>
+            </footer>
+
+            
+            <script type="module" src="script.js"></script>
+            
+    </body>
+    </html>
